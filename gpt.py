@@ -15,7 +15,6 @@ def conclude(messages):
         model="gpt-4o",
         messages=messages,
         temperature=1,
-        max_tokens=128,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0
