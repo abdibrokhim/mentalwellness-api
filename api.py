@@ -22,6 +22,11 @@ def gemini(request_body: dict):
     messages = request_body.get("messages", "")
     return gpt.conclude(messages)
 
+@app.post("/api/gpt4o/title")
+def gemini(request_body: dict):
+    messages = request_body.get("messages", "")
+    return gpt.gen_title(messages)
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=9000)
