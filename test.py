@@ -71,6 +71,6 @@ def test_gen_title():
         print('Failed to generate GPT response:', response.status_code, response.text)
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
     # test_conclude()
-    test_gen_title()
+    # test_gen_title()
