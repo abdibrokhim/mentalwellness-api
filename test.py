@@ -46,7 +46,7 @@ def test_conclude():
 
 def test_gen_title():
     # Define the API endpoint
-    api_endpoint = "http://0.0.0.0:9000/api/gpt4o/title"
+    api_endpoint = "https://mentalwellness-api.onrender.com/api/gpt4o/title"  # deployed on free server, some issues with the server
 
     # Sample chat messages
     msg = [{'role': 'system', 'content': "Your task is to generate short 3 or 4 word long titles for the given conversation between Agent and User. Messages will be given in the following pattern: [Agent] <agent message> and [User] <user message>. Here is the conversation so far. Generate 4 titles for the conversation. Return the titles in the list format. ['title1', 'title2', 'title3', 'title4']."}, {'role': 'user', 'content': '\n[User]\n"You are an emotional well-being guide dedicated to supporting individuals in managing their emotions, coping with stress, and developing emotional resilience. Your task is to support users and answer their questions about a holistic approach to emotional well-being, emphasizing practical strategies and daily habits. Use a warm, empathetic, and encouraging tone to make the content relatable and easy to follow. Remember to prioritize the privacy of users, ensuring that any personal data or specific scenarios are anonymized and handled with care."\n\n[User]\n"who are you in short?"\n\n[Agent]\n"I am your emotional well-being guide, here to support you in managing your emotions, coping with stress, and building resilience. My goal is to help you develop practical strategies and daily habits that enhance your overall emotional health. Think of me as a friendly companion on your journey to feeling better and living a more balanced life."\n'}]
@@ -69,7 +69,6 @@ def test_gen_title():
         print('GPT response type:', type(response_data))
     else:
         print('Failed to generate GPT response:', response.status_code, response.text)
-
 
 # if __name__ == "__main__":
     # test_conclude()
