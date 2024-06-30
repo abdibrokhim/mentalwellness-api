@@ -18,12 +18,12 @@ async def read_root():
     return {"message": "Hello World"}
 
 @app.post("/api/gpt4o")
-def gemini(request_body: dict):
+def gpt(request_body: dict):
     messages = request_body.get("messages", "")
     return gpt.conclude(messages)
 
 @app.post("/api/gpt4o/title")
-def gemini(request_body: dict):
+def gpt_title(request_body: dict):
     messages = request_body.get("messages", "")
     return gpt.gen_title(messages)
 
