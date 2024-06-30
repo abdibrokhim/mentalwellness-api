@@ -1,7 +1,3 @@
-# MeWellAI Backend Service (API)
-
-`Note:` Make sure you have already checked MeWellAI app [here](https://github.com/abdibrokhim/mentalwellness). if you haven't, please check it first then come back here again.
-
 ## 🚀 Getting Started
 
 ### 📋 Pre-requisites
@@ -70,10 +66,10 @@ bash run.sh
 gunicorn api:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:80
 ```
 
-Back to [README.md]() file.
+Back to [README.md](https://github.com/abdibrokhim/mentalwellness-api/blob/main/README.md) file.
 
 ## New to API development? 🙃
-Check the [FASTAPI.md]() file for helpful resources on how to get started with Python and FastAPI.
+Check the [FASTAPI.md](https://github.com/abdibrokhim/mentalwellness-api/blob/main/FASTAPI.md) file for helpful resources on how to get started with Python and FastAPI.
 
 ## Contact 📨
 Message me at [abdibrokhim@gmail.com](mailto:abdibrokhim@gmail.com) or [Contact](https://abdibrokhim.vercel.app/contact)
